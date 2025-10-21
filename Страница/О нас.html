@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportMarket - о нас</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.svg" alt="SportMarket"width="150">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Главная.html">Главная</a></li>
+                    <li><a href="#" onclick="showSectionUnavailable('Каталог')">Каталог</a></li>
+                    <li><a href="#" onclick="showSectionUnavailable('Акции')">Акции</a></li>
+                    <li><a href="О нас.html">О нас</a></li>
+                    <li><a href="#" onclick="showSectionUnavailable('Поддержка')">Поддержка</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <!-- Форма поиска -->
+                <form id="search-form" class="search-form">
+                    <input type="text" placeholder="Поиск товаров..." id="search-input">
+                    <button type="submit">Найти</button>
+                </form>
+                <div class="user-actions">
+                    <a href="#" onclick="showSectionUnavailable('Корзина')">Корзина</a>
+                    <a href="#" onclick="showSectionUnavailable('Вход')">Войти</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="hero1">
+        <div class="container">
+            <h1>О нас</h1>
+            <p>Здесь вы узнаете о нас немного больше</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            Извините, пока никакой информации нет
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SportMarket</h3>
+                    <p>Магазин спортивных товаров №1</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="Главная.html">Главная</a></li>
+                        <li><a href="#" onclick="showSectionUnavailable('Каталог')">Каталог</a></li>
+                        <li><a href="#" onclick="showSectionUnavailable('Акции')">Акции</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Помощь</h4>
+                    <ul>
+                        <li>
+                            <a href="#"
+                               onclick="showSectionUnavailable('Доставка')">Доставка</a>
+                        </li>
+                        <li><a href="#" onclick="showSectionUnavailable('Оплата')">Оплата</a></li>
+                        <li><a href="#" onclick="showSectionUnavailable('Поддержка')">Поддержка</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportMarket - Магазин спортивных товаров</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Подключение внешнего файла JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.svg" alt="SportMarket" width="150">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showSectionUnavailable('Главная')">Главная</a></li>
+                    <li><a href="#" onclick="showSectionUnavailable('Каталог')">Каталог</a></li>
+                    <li><a href="#" onclick="showSectionUnavailable('Акции')">Акции</a></li>
+                    <li><a href="О нас.html">О нас</a></li>
+                    <li><a href="#" onclick="showSectionUnavailable('Поддержка')">Поддержка</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <!-- Форма поиска -->
+                <form id="search-form" class="search-form">
+                    <input type="text" placeholder="Поиск товаров..." id="search-input">
+                    <button type="submit">Найти</button>
+                </form>
+                <div class="user-actions">
+                    <a href="#" onclick="showSectionUnavailable('Корзина')">Корзина</a>
+                    <a href="#" onclick="showSectionUnavailable('Вход')">Войти</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Лучшие спортивные товары</h2>
+                <p>Одежда, обувь и инвентарь для профессионалов и любителей</p>
+                <button onclick="showSectionUnavailable('Каталог')">Перейти в каталог</button>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <div class="container">
+                <h2>Популярные товары</h2>
+                <div class="products-grid">
+                    <!-- Карточки товаров -->
+                    <div class="product-card" onclick="showSectionUnavailable('Товар 1')">
+                        <img src="product1.jpg" alt="Кроссовки для бега">
+                        <h3>Кроссовки для бега</h3>
+                        <p>2 999 ₽</p>
+                    </div>
+                    <div class="product-card" onclick="showSectionUnavailable('Товар 2')">
+                        <img src="product2.jpg" alt="Спортивная форма">
+                        <h3>Спортивная форма</h3>
+                        <p>1 599 ₽</p>
+                    </div>
+                    <div class="product-card" onclick="showSectionUnavailable('Товар 3')">
+                        <img src="product3.jpg" alt="Футбольный мяч">
+                        <h3>Футбольный мяч</h3>
+                        <p>899 ₽</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SportMarket</h3>
+                    <p>Магазин спортивных товаров №1</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="#" onclick="showSectionUnavailable('Главная')">Главная</a></li>
+                        <li><a href="#" onclick="showSectionUnavailable('Каталог')">Каталог</a></li>
+                        <li><a href="#" onclick="showSectionUnavailable('Акции')">Акции</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Помощь</h4>
+                    <ul>
+                        <li>
+                            <a href="#"
+                               onclick="showSectionUnavailable('Доставка')">Доставка</a>
+                        </li>
+                        <li><a href="#" onclick="showSectionUnavailable('Оплата')">Оплата</a></li>
+                        <li><a href="#" onclick="showSectionUnavailable('Поддержка')">Поддержка</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Встроенный JavaScript код для обработки формы поиска -->
+    <script>
+        document.getElementById('search-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Отменяем отправку формы
+            alert('Функция поиска на данный момент недоступна!');
+        });
+    </script>
+</body>
+</html>
