@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportMarket - Магазин спортивных товаров</title>
+    <link rel="stylesheet" href="styless.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.svg" alt="SportMarket" width="150">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Главная</a></li>
+                    <li><a href="#featured-products">Каталог</a></li>
+                    <li><a href="#promotions">Акции</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#support">Поддержка</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <form id="search-form" class="search-form">
+                    <input type="text" placeholder="Поиск товаров..." id="search-input">
+                    <button type="submit">Найти</button>
+                </form>
+                <div class="user-actions">
+                    <a href="#" onclick="showSectionUnavailable('Корзина')">Корзина</a>
+                    <a href="#" onclick="showSectionUnavailable('Вход')">Войти</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Секция Hero (Главная) -->
+        <section class="hero" id="hero">
+            <div class="container">
+                <h2>Лучшие спортивные товары</h2>
+                <p>Одежда, обувь и инвентарь для профессионалов и любителей</p>
+                <button onclick="scrollToSection('featured-products')">Перейти в каталог</button>
+            </div>
+        </section>
+
+        <!-- Секция Каталог с таблицей -->
+        <section class="featured-products" id="featured-products">
+            <div class="container">
+                <h2>Популярные товары</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="product1.jpg" alt="Кроссовки для бега">
+                        <h3>Кроссовки для бега</h3>
+                        <p>2 999 ₽</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="product2.jpg" alt="Спортивная форма">
+                        <h3>Спортивная форма</h3>
+                        <p>1 599 ₽</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="product3.jpg" alt="Футбольный мяч">
+                        <h3>Футбольный мяч</h3>
+                        <p>899 ₽</p>
+                    </div>
+                </div>
+                
+                <!-- Таблица для задания №2 -->
+                <h3 style="margin-top: 40px; text-align: center;">Сравнение характеристик товаров</h3>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Товар</th>
+                            <th>Цена</th>
+                            <th>Рейтинг</th>
+                            <th>Наличие</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Кроссовки для бега</td>
+                            <td>2 999 ₽</td>
+                            <td>4.8/5</td>
+                            <td>В наличии</td>
+                        </tr>
+                        <tr>
+                            <td>Спортивная форма</td>
+                            <td>1 599 ₽</td>
+                            <td>4.5/5</td>
+                            <td>В наличии</td>
+                        </tr>
+                        <tr>
+                            <td>Футбольный мяч</td>
+                            <td>899 ₽</td>
+                            <td>4.9/5</td>
+                            <td>В наличии</td>
+                        </tr>
+                        <tr>
+                            <td>Гантели 5 кг</td>
+                            <td>1 299 ₽</td>
+                            <td>4.7/5</td>
+                            <td>Под заказ</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Секция Акции с элементами aside -->
+        <section class="promotions" id="promotions">
+            <div class="container">
+                <h2>Акции и специальные предложения</h2>
+                
+                <aside class="promo-box">
+                    <h3>🎉 Скидка 20% на всё!</h3>
+                    <p>Акция действует до конца месяца. Успейте купить спортивные товары по выгодной цене! Не упустите возможность обновить свой спортивный гардероб.</p>
+                </aside>
+                
+                <aside class="promo-box">
+                    <h3>🚚 Бесплатная доставка</h3>
+                    <p>При заказе от 3000 рублей доставка абсолютно бесплатная по всей России! Оформите заказ прямо сейчас и получите свои товары без дополнительных затрат.</p>
+                </aside>
+                
+                <aside class="promo-box">
+                    <h3>💳 Рассрочка 0%</h3>
+                    <p>Покупайте товары в рассрочку на 6 месяцев без переплат и процентов. Доступно для заказов от 5000 рублей. Оформление за 5 минут!</p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Секция О нас -->
+        <section class="about" id="about">
+            <div class="container">
+                <h2>О нас</h2>
+                <p>
+                    SportMarket - это ваш надежный партнер в мире спорта. Мы предлагаем широкий ассортимент 
+                    качественных спортивных товаров для любого вида активности. Наша команда профессионалов 
+                    работает для того, чтобы вы могли наслаждаться спортом и достигать новых высот.
+                </p>
+                <p style="margin-top: 15px;">
+                    Более 10 лет мы помогаем людям вести здоровый образ жизни, предлагая только проверенные 
+                    бренды и качественную продукцию. Доверьте свой спорт профессионалам!
+                </p>
+            </div>
+        </section>
+
+        <!-- Секция Поддержка с формой -->
+        <section class="support" id="support">
+            <div class="container">
+                <h2>Форма обратной связи</h2>
+                <p style="margin-bottom: 20px;">Есть вопросы? Заполните форму ниже, и мы свяжемся с вами в ближайшее время!</p>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя: *</label>
+                        <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email: *</label>
+                        <input type="email" id="email" name="email" required placeholder="example@mail.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="category">Категория обращения: *</label>
+                        <select id="category" name="category" required>
+                            <option value="">Выберите категорию</option>
+                            <option value="order">Вопрос о заказе</option>
+                            <option value="product">Вопрос о товаре</option>
+                            <option value="delivery">Доставка</option>
+                            <option value="payment">Оплата</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Сообщение: *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Опишите ваш вопрос подробно..."></textarea>
+                    </div>
+                    
+                    <div class="form-buttons">
+                        <input type="submit" value="Отправить">
+                        <input type="reset" value="Очистить форму">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SportMarket</h3>
+                    <p>Магазин спортивных товаров №1</p>
+                    <p style="margin-top: 10px; font-size: 0.9rem;">© 2024 Все права защищены</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="#hero">Главная</a></li>
+                        <li><a href="#featured-products">Каталог</a></li>
+                        <li><a href="#promotions">Акции</a></li>
+                        <li><a href="#about">О нас</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Помощь</h4>
+                    <ul>
+                        <li><a href="#" onclick="showSectionUnavailable('Доставка')">Доставка</a></li>
+                        <li><a href="#" onclick="showSectionUnavailable('Оплата')">Оплата</a></li>
+                        <li><a href="#" onclick="showSectionUnavailable('Возврат')">Возврат</a></li>
+                        <li><a href="#support">Поддержка</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li>Email: info@sportmarket.ru</li>
+                        <li>Телефон: +7 (800) 555-35-35</li>
+                        <li>Адрес: г. Москва, ул. Спортивная, 1</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
