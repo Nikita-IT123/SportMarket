@@ -1,0 +1,24 @@
+/* print.css */
+@media print {
+    header, footer, nav {
+        display: none;
+    }
+
+    body {
+        background: none;
+        color: black;
+        font-size: 12pt;
+    }
+
+    table {
+        page-break-inside: avoid;
+    }
+
+    section {
+        page-break-after: avoid;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        margin: 0 0 1cm 0;
+    }
+}
